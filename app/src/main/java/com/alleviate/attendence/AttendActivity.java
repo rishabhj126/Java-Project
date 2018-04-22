@@ -87,6 +87,19 @@ public class AttendActivity extends AppCompatActivity {
                     case 3:
                         subject_array = R.array.sem4_subject;
                         break;
+                    case 4:
+                        subject_array = R.array.sem5_subject;
+                        break;
+                    case 5:
+                        subject_array = R.array.sem6_subject;
+                        break;
+                    case 6:
+                        subject_array = R.array.sem7_subject;
+                        break;
+                    case 7:
+                        subject_array = R.array.sem8_subject;
+                        break;
+
                     default:
                         subject_array = R.array.sem1_subject;
                         break;

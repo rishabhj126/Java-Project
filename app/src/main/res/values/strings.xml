@@ -13,12 +13,15 @@
         <item>Semester IV</item>
         <item>Semester V</item>
         <item>Semester VI</item>
+        <item>Semester VII</item>
+        <item>Semester VIII</item>
     </array>
 
     <array name="year">
         <item>First Year</item>
         <item>Second Year</item>
         <item>Third Year</item>
+        <item>Fourth Year</item>
     </array>
 
     <array name="sem1_subject">
@@ -53,11 +56,43 @@
         <item>Subject 20</item>
     </array>
 
+    <array name="sem5_subject">
+        <item>Subject 21</item>
+        <item>Subject 22</item>
+        <item>Subject 23</item>
+        <item>Subject 24</item>
+        <item>Subject 25</item>
+    </array>
+
+    <array name="sem6_subject">
+        <item>Subject 26</item>
+        <item>Subject 27</item>
+        <item>Subject 28</item>
+        <item>Subject 29</item>
+        <item>Subject 30</item>
+    </array>
+
+    <array name="sem7_subject">
+        <item>Subject 31</item>
+        <item>Subject 32</item>
+        <item>Subject 33</item>
+        <item>Subject 34</item>
+        <item>Subject 35</item>
+    </array>
+
+    <array name="sem8_subject">
+        <item>Subject 36</item>
+        <item>Subject 37</item>
+        <item>Subject 38</item>
+        <item>Subject 39</item>
+        <item>Subject 40</item>
+    </array>
+
     <array name="teacher">
-        <item>Prof. ABC</item>
-        <item>Prof. PQR</item>
-        <item>Prof. XYZ</item>
-        <item>Prof. LMN</item>
+        <item>Prof. Anjani Kumar</item>
+        <item>Prof. Shobha Rai</item>
+        <item>Prof. Sachin Kumar</item>
+        <item>Prof. Harendra Singh</item>
     </array>
 
     <array name="date">
