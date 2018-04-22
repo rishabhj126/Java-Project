@@ -41,7 +41,7 @@ public class AdminActivity extends AppCompatActivity {
         if(cur!=null){
             while (cur.moveToNext()){
                 int id =cur.getInt(cur.getColumnIndex(db.db_info_id));
-                int roll_no =cur.getInt(cur.getColumnIndex(db.db_info_no));
+                int regno =cur.getInt(cur.getColumnIndex(db.db_info_no));
                 String name =cur.getString(cur.getColumnIndex(db.db_info_name));
                 String uname =cur.getString(cur.getColumnIndex(db.db_info_username));
                 long contact =cur.getLong(cur.getColumnIndex(db.db_info_contact));
@@ -49,7 +49,7 @@ public class AdminActivity extends AppCompatActivity {
                 String year =cur.getString(cur.getColumnIndex(db.db_info_year));
                 String add =cur.getString(cur.getColumnIndex(db.db_info_address));
 
-                studentInfos.add(new StudentInfo(id,roll_no,name,uname,contact,sem,year,add));
+                studentInfos.add(new StudentInfo(id,regno,name,uname,contact,sem,year,add));
 
             }cur.close();
         }
@@ -89,7 +89,7 @@ public class AdminActivity extends AppCompatActivity {
         if(cur!=null){
             while (cur.moveToNext()){
                 int id =cur.getInt(cur.getColumnIndex(db.db_info_id));
-                int roll_no =cur.getInt(cur.getColumnIndex(db.db_info_no));
+                int regno =cur.getInt(cur.getColumnIndex(db.db_info_no));
                 String name =cur.getString(cur.getColumnIndex(db.db_info_name));
                 String uname =cur.getString(cur.getColumnIndex(db.db_info_username));
                 long contact =cur.getLong(cur.getColumnIndex(db.db_info_contact));
@@ -97,7 +97,7 @@ public class AdminActivity extends AppCompatActivity {
                 String year =cur.getString(cur.getColumnIndex(db.db_info_year));
                 String add =cur.getString(cur.getColumnIndex(db.db_info_address));
 
-                studentInfos.add(new StudentInfo(id,roll_no,name,uname,contact,sem,year,add));
+                studentInfos.add(new StudentInfo(id,regno,name,uname,contact,sem,year,add));
 
             }cur.close();
         }
@@ -150,19 +150,19 @@ public class AdminActivity extends AppCompatActivity {
     }
 
     class StudentInfo {
-        String name, uname, course, semester, year;
-        int id,roll_no;
+        String name, uname, address, semester, year;
+        int id,reg_no;
         long contact;
 
-        public StudentInfo(int id, int roll_no, String name, String uname, long contact, String sem, String year, String course) {
+        public StudentInfo(int id, int regno, String name, String uname, long contact, String sem, String year, String add) {
             this.id = id;
-            this.roll_no = roll_no;
+            this.reg_no = regno;
             this.name = name;
             this.uname = uname;
             this.contact = contact;
             this.semester = sem;
             this.year = year;
-            this.course = course;
+            this.address = add;
         }
     }
 }

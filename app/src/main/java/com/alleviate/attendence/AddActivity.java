@@ -22,11 +22,11 @@ public class AddActivity extends AppCompatActivity {
         setTitle("Add Student");
         getSupportActionBar().setDefaultDisplayHomeAsUpEnabled(true);
 
-        final EditText rollno = (EditText)findViewById(R.id.rollno);
+        final EditText regno = (EditText)findViewById(R.id.rollno);
         final EditText name = (EditText)findViewById(R.id.name);
         final EditText uname = (EditText)findViewById(R.id.username);
         final EditText contact = (EditText)findViewById(R.id.contact);
-        final EditText course = (EditText)findViewById(R.id.course);
+        final EditText address = (EditText)findViewById(R.id.course);
 
         Spinner semester = (Spinner)findViewById(R.id.semester);
 
@@ -70,15 +70,15 @@ public class AddActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                String roll_no = "";
+                String reg_no = "";
                 String u_name = name.getText().toString();
                 String u_uname = uname.getText().toString();
                 long cont_no = 0;
                 String password = "1234";
                 String acc_type = "User";
-                String add = course.getText().toString();
-                if(!contact.getText().toString().equals("") && !rollno.getText().toString().equals("")){
-                    roll_no = rollno.getText().toString();
+                String add = address.getText().toString();
+                if(!contact.getText().toString().equals("") && !regno.getText().toString().equals("")){
+                    reg_no = regno.getText().toString();
                     cont_no = Long.parseLong(contact.getText().toString());
                 }
 
@@ -87,7 +87,7 @@ public class AddActivity extends AppCompatActivity {
                 SQLiteDatabase dbw = db.getWritableDatabase();
 
                 ContentValues insert_usr = new ContentValues();
-                insert_usr.put(db.db_info_no,roll_no);
+                insert_usr.put(db.db_info_no,reg_no);
                 insert_usr.put(db.db_info_name,u_name);
                 insert_usr.put(db.db_info_username, u_uname);
                 insert_usr.put(db.db_info_contact, cont_no);
@@ -110,7 +110,7 @@ public class AddActivity extends AppCompatActivity {
 
                 int records = cur.getCount();
 
-                if(!u_name.equals("") || !u_uname.equals("") || cont_no>0 || !roll_no.equals("")){
+                if(!u_name.equals("") || !u_uname.equals("") || cont_no>0 || !reg_no.equals("")){
                     if(records==0) {
                         long id = dbw.insert(db.db_Itable, null, insert_usr);
                         id = dbw.insert(db.db_Utable, null, insert_usr_sign);
