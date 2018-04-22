@@ -1,4 +1,4 @@
-# Android Attendance Managment
+# Attendance and Scheduler Android Application for Teachers
 Attendance Management System for Cluster Innovation Centre.
 Login system based on SQLite.
 
