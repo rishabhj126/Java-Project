@@ -2,8 +2,8 @@
     <string name="app_name">Attendance</string>
 
     <array name="acc_type">
-        <item>Administrator</item>
-        <item>User</item>
+        <item>Teacher</item>
+        <item>Student</item>
     </array>
 
     <array name="semester">
