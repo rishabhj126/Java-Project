@@ -76,10 +76,10 @@ public class SignActivity extends AppCompatActivity {
 
                         dbw.close();
 
-                        Toast.makeText(getApplicationContext(),"Student Added!",Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getApplicationContext(),"Teacher Added!",Toast.LENGTH_SHORT).show();
                         finish();
                     }else {
-                        Toast.makeText(getApplicationContext(),"Student Name already exist...!",Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getApplicationContext(),"Teacher Name already exist...!",Toast.LENGTH_SHORT).show();
                     }
 
                 }else {
