@@ -53,5 +53,5 @@
         android:layout_alignRight="@+id/password"
         android:layout_below="@+id/password"
         android:layout_marginTop="45dp"
-        android:text="Add Director" />
+        android:text="Add Teacher" />
 </RelativeLayout>

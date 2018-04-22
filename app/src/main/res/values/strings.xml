@@ -25,19 +25,25 @@
     </array>
 
     <array name="sem1_subject">
-        <item>Subject 1</item>
-        <item>Subject 2</item>
-        <item>Subject 3</item>
-        <item>Subject 4</item>
-        <item>Subject 5</item>
+        <item>Calculus</item>
+        <item>Linear Algebra</item>
+        <item>Data Structure</item>
+        <item>Algorithm</item>
+        <item>Mechanics</item>
+        <item>Business</item>
+        <item>Environmental</item>
     </array>
 
     <array name="sem2_subject">
-        <item>Subject 6</item>
-        <item>Subject 7</item>
-        <item>Subject 8</item>
-        <item>Subject 9</item>
-        <item>Subject 10</item>
+        <item>Object Oriented Programming</item>
+        <item>ODE</item>
+        <item>Discrete</item>
+        <item>Logic</item>
+        <item>Electrostatics</item>
+        <item>Business IT</item>
+        <item>Bio</item>
+        <item>Electronics</item>
+        <item>Art of Communication</item>
     </array>
 
     <array name="sem3_subject">
