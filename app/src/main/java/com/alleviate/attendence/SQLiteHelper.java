@@ -25,7 +25,7 @@ public class SQLiteHelper extends SQLiteOpenHelper {
     public static final String db_info_contact = "Number";
     public static final String db_info_sem = "Semester";
     public static final String db_info_year = "Year";
-    public static final String db_info_address = "Address";
+    public static final String db_info_address = "Course";
 
     public static final String db_Atable = "Attendance";
     public static final String db_attend_id = "Id";
