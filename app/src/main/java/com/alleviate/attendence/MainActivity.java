@@ -42,15 +42,7 @@ public class MainActivity extends AppCompatActivity {
 
                     Cursor cur =dbr.query(db.db_Utable, col, where, null, null, null, null);
 
-                    /*Cursor curr =dbr.query(db.db_Utable, col, null, null, null, null, null);
-                    if(curr!=null){
-                        while (curr.moveToNext()){
-                            System.out.println(curr.getString(cur.getColumnIndex(db.db_user_name)));
-                            System.out.println(curr.getString(cur.getColumnIndex(db.db_user_type)));
-                            //Toast.makeText(getApplicationContext(),type,Toast.LENGTH_SHORT).show();
 
-                        }cur.close();
-                    }*/
 
                     int count = cur.getCount();
 

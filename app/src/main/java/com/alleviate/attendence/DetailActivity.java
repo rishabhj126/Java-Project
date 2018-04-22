@@ -11,6 +11,7 @@ import android.preference.PreferenceManager;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -68,7 +69,7 @@ public class DetailActivity extends AppCompatActivity {
                 tyear.setText(year);
                 taddress.setText("Course: "+add);
 
-                share_info = "Name: "+name+"\nUsername: "+uname+"\nRoll No.: "+regno+"\nContact No.: "+contact+"\nCurrent: "+sem+"\nYear: "+year+".\n";
+                share_info = "First Name: "+name+"\nLast Name: "+uname+"\nRoll No.: "+regno+"\nContact No.: "+contact+"\nCurrent: "+sem+"\nYear: "+year+".\n";
 
 
             }cur.close();
@@ -112,6 +113,8 @@ public class DetailActivity extends AppCompatActivity {
         }
 
         dbr.close();
+
+
     }
 
     @Override

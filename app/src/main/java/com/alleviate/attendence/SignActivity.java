@@ -24,23 +24,8 @@ public class SignActivity extends AppCompatActivity {
 
         final EditText uname = (EditText)findViewById(R.id.username);
         final EditText pass = (EditText)findViewById(R.id.password);
-//        Spinner type = (Spinner)findViewById(R.id.type);
 
-        /*ArrayAdapter<CharSequence> adapter_type = ArrayAdapter.createFromResource(this, R.array.acc_type, android.R.layout.simple_spinner_item);
-        adapter_type.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        type.setAdapter(adapter_type);*/
 
-        /*type.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-            @Override
-            public void onItemSelected(AdapterView<?> adapterView, View view, int position, long l) {
-                acc_type = adapterView.getItemAtPosition(position).toString();
-            }
-
-            @Override
-            public void onNothingSelected(AdapterView<?> adapterView) {
-                acc_type = "Administrator";
-            }
-        });*/
 
         Button add = (Button)findViewById(R.id.add);
 
@@ -88,6 +73,8 @@ public class SignActivity extends AppCompatActivity {
 
             }
         });
+
+
 
     }
 
