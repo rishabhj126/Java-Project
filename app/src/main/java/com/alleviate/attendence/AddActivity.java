@@ -22,11 +22,11 @@ public class AddActivity extends AppCompatActivity {
         setTitle("Add Student");
         getSupportActionBar().setDefaultDisplayHomeAsUpEnabled(true);
 
-        final EditText regno = (EditText)findViewById(R.id.regno);
+        final EditText regno = (EditText)findViewById(R.id.rollno);
         final EditText name = (EditText)findViewById(R.id.name);
         final EditText uname = (EditText)findViewById(R.id.username);
         final EditText contact = (EditText)findViewById(R.id.contact);
-        final EditText address = (EditText)findViewById(R.id.address);
+        final EditText address = (EditText)findViewById(R.id.course);
 
         Spinner semester = (Spinner)findViewById(R.id.semester);
 
