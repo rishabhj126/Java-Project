@@ -17,19 +17,19 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="text"
-        android:maxLength="10"
-        android:ems="10"
-        android:hint="Register Number"
-        android:id="@+id/regno"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+            <EditText
+                android:id="@+id/rollno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:ems="10"
+                android:hint="Roll Number"
+                android:inputType="text"
+                android:maxLength="10" />
 
     <EditText
         android:layout_width="wrap_content"
@@ -39,7 +39,7 @@
         android:ems="10"
         android:id="@+id/name"
         android:layout_marginTop="10dp"
-        android:layout_below="@+id/regno"
+        android:layout_below="@+id/rollno"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_alignParentRight="true"
@@ -88,30 +88,30 @@
         android:layout_below="@+id/semester"
         android:layout_centerHorizontal="true" />
 
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:inputType="textPostalAddress"
-        android:layout_marginTop="10dp"
-        android:ems="10"
-        android:hint="Address"
-        android:id="@+id/address"
-        android:layout_below="@+id/year"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
-
-            <Button
-                android:layout_width="wrap_content"
+            <EditText
+                android:id="@+id/course"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Add User"
-                android:id="@+id/add_user"
-                android:layout_marginTop="20dp"
-                android:layout_marginBottom="10dp"
-                android:layout_below="@+id/address"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
+                android:layout_below="@+id/year"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:hint="Course"
+                android:inputType="textPostalAddress" />
+
+            <Button
+                android:id="@+id/add_student"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentLeft="true"
                 android:layout_alignParentRight="true"
-                android:layout_alignParentEnd="true" />
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/course"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="20dp"
+                android:text="Add Student" />
 
         </RelativeLayout>
 

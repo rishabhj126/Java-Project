@@ -34,11 +34,11 @@ public class DetailActivity extends AppCompatActivity {
 
         TextView tname = (TextView)findViewById(R.id.name);
         TextView tuname = (TextView)findViewById(R.id.username);
-        TextView tregno = (TextView)findViewById(R.id.regno);
+        TextView tregno = (TextView)findViewById(R.id.rollno);
         TextView tcontact = (TextView)findViewById(R.id.contact);
         TextView tsem = (TextView)findViewById(R.id.semester);
         TextView tyear = (TextView)findViewById(R.id.year);
-        TextView taddress = (TextView)findViewById(R.id.address);
+        TextView taddress = (TextView)findViewById(R.id.course);
         TextView tattendance = (TextView)findViewById(R.id.attendance);
 
         SQLiteHelper db = new SQLiteHelper(getApplicationContext());
