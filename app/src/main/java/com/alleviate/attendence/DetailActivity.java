@@ -27,7 +27,7 @@ public class DetailActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detail);
         getSupportActionBar().setDefaultDisplayHomeAsUpEnabled(true);
-        setTitle("Information");
+        setTitle("Information!");
         String name = "";
         Intent in = getIntent();
         username = in.getStringExtra("Username");
