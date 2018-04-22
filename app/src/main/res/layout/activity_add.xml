@@ -31,19 +31,19 @@
                 android:inputType="text"
                 android:maxLength="10" />
 
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="textPersonName"
-        android:hint="Full Name"
-        android:ems="10"
-        android:id="@+id/name"
-        android:layout_marginTop="10dp"
-        android:layout_below="@+id/rollno"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/rollno"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:hint="First Name"
+                android:inputType="textPersonName" />
 
             <EditText
                 android:id="@+id/username"
@@ -55,7 +55,7 @@
                 android:layout_alignParentStart="true"
                 android:layout_below="@+id/name"
                 android:layout_marginTop="10dp"
-                android:hint="Username" />
+                android:hint="Last Name" />
 
     <EditText
         android:layout_width="match_parent"
