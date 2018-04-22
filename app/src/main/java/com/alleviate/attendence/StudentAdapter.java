@@ -12,7 +12,7 @@ import android.widget.TextView;
 import java.util.ArrayList;
 
 /**
- * Created by felix on 15/2/16.
+ * Created by CIC'ans on 23/04/18.
  */
 public class StudentAdapter extends RecyclerView.Adapter<StudentAdapter.ViewHolder> {
     ArrayList<AdminActivity.StudentInfo> student_list;

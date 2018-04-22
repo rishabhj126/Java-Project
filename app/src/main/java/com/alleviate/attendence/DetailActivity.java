@@ -27,7 +27,7 @@ public class DetailActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detail);
         getSupportActionBar().setDefaultDisplayHomeAsUpEnabled(true);
-        setTitle("Information!");
+        setTitle("Information");
         String name = "";
         Intent in = getIntent();
         username = in.getStringExtra("Username");
@@ -62,13 +62,13 @@ public class DetailActivity extends AppCompatActivity {
 
                 tname.setText(name);
                 tuname.setText("("+uname+")");
-                tregno.setText("Register No: "+regno);
+                tregno.setText("Roll No: "+regno);
                 tcontact.setText("Contact No: "+contact);
                 tsem.setText("Current "+sem);
                 tyear.setText(year);
-                taddress.setText("Address: "+add);
+                taddress.setText("Course: "+add);
 
-                share_info = "Name: "+name+"\nUsername: "+uname+"\nRegister No.: "+regno+"\nContact No.: "+contact+"\nCurrent: "+sem+"\nYear: "+year+".\n";
+                share_info = "Name: "+name+"\nUsername: "+uname+"\nRoll No.: "+regno+"\nContact No.: "+contact+"\nCurrent: "+sem+"\nYear: "+year+".\n";
 
 
             }cur.close();

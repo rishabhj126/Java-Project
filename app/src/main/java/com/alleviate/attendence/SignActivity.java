@@ -13,14 +13,14 @@ import android.widget.Toast;
 
 public class SignActivity extends AppCompatActivity {
 
-    String acc_type = "User";
+    String acc_type = "Student";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        setTitle("Create User");
+        setTitle("Create Student");
 
         final EditText uname = (EditText)findViewById(R.id.username);
         final EditText pass = (EditText)findViewById(R.id.password);
@@ -49,7 +49,7 @@ public class SignActivity extends AppCompatActivity {
             public void onClick(View view) {
                 String user_name = uname.getText().toString();
                 String password = pass.getText().toString();
-                acc_type = "Administrator";
+                acc_type = "Teacher";
 
                 if(user_name.length()>=4 && password.length()>=4){
 
@@ -76,10 +76,10 @@ public class SignActivity extends AppCompatActivity {
 
                         dbw.close();
 
-                        Toast.makeText(getApplicationContext(),"User Added!",Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getApplicationContext(),"Student Added!",Toast.LENGTH_SHORT).show();
                         finish();
                     }else {
-                        Toast.makeText(getApplicationContext(),"Username already exist...!",Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getApplicationContext(),"Student Name already exist...!",Toast.LENGTH_SHORT).show();
                     }
 
                 }else {
